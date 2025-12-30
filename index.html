@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamron Saniee</title>
     <style>
-        body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
-            font-size: 13px; /* Slightly smaller is often sharper */
-            line-height: 1.6; 
-            color: #000; 
-            max-width: 750px; 
-            margin: 80px auto; 
-            padding: 20px;
-            letter-spacing: -0.01em; /* Tighter tracking increases sharpness */
-            -webkit-font-smoothing: antialiased; /* Makes text look crisper on Mac */
-        }
-        
-        h1 { 
-            font-size: 13px; 
-            font-weight: 600; 
-            margin-bottom: 50px; 
-            text-transform: uppercase;
-        }
-
-        h2 { 
-            font-size: 13px; 
-            font-weight: 600; 
-            margin-top: 60px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #000;
-            padding-bottom: 4px;
-        }
-
-        /* This mimics the Wilson 'List' style */
-        .project { 
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
+        body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.5; color: #000; max-width: 800px; margin: 40px auto; padding: 20px; }
+        h1 { font-size: 1.2rem; font-weight: bold; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px; }
+        h2 { font-size: 1rem; font-weight: bold; margin-top: 40px; border-bottom: 1px solid #000; padding-bottom: 5px; }
+        section { margin-bottom: 60px; }
+        .project { margin-bottom: 20px; }
+        .project-title { font-weight: bold; text-decoration: none; color: black; display: block; }
+        .project-year { color: #666; font-size: 0.9rem; }
+        a { color: #000; text-decoration: underline; }
+        a:hover { color: #666; }
+        p { margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <h1>Kamron Saniee</h1>
+    <div class="header">
+        <span class="name">Kamron Saniee</span>
+        <a href="mailto:kamron.saniee@gmail.com" class="email">kamron.saniee@gmail.com</a>
+        <div class="divider">...</div>
+    </div>
 
     <section id="info">
-        <p>Kamron Saniee’s compositions have been presented at Fridman Gallery, Management Gallery, The Knockdown Center, the USA Shaolin Temple, The Lot Radio, Elsewhere, La MaMa, and Nowadays, with international presentations at The Performing Arts Meetup in Yokohama, The Spatial Sound Institute in Budapest, and Collisions Festival in Munich. He has taught at Columbia University and Parsons School of Design, and lectured at Yale University, The New Museum, and the International Research Institute for Cultural Technologies and Media Philosophy at Bauhaus University, Weimar.</p>
+        <p>Kamron Saniee’s compositions have been presented at Fridman Gallery, Management Gallery, The Knockdown Center, the USA Shaolin Temple, The Lot Radio, Elsewhere, La MaMa, and Nowadays, with international presentations at The Performing Arts Meetup in Yokohama, The Spatial Sound Institute in Budapest, and Collisions Festival in Munich. He has taught at Columbia University and Parsons School of Design, and lectured at Yale University, The New Museum, and the International Research Institute for Cultural Technologies and Media Philosophy at Bauhaus University, Weimar. </p>
         
         <p>His solo and collaborative work has been featured in The New York Times (“What to see in N.Y.C. Galleries in May”, 2025), The Fader (“Songs You Need In Your Life”, 2024), and Resident Advisor (“RA Recommends” and “April’s Best Music”, 2021). In 2016, he was one of 39 international artist-producers selected for Red Bull Music Academy, held in Montreal. </p>
 
         <p>He is currently in development on a narrative short film titled A.I. Stars, exploring the cinematic representation of synthetic actors. He is also authoring a series of short stories drawing on his experience working for TikTok during the national ban efforts in 2023-24.</p>
+        
+        <div class="divider">...</div>
     </section>
 
     <section id="work">
-        <h2>Selected Work</h2>
-        <div class="project">
-            <a href="#" class="project-title">A.I. Stars (In Development)</a>
-            <span class="project-year">Short Film, 2025</span>
-        </div>
-        <div class="project">
-            <a href="#" class="project-title">TikTok Short Stories</a>
-            <span class="project-year">Writing, 2024</span>
-        </div>
-        <div class="project">
-            <a href="#" class="project-title">Selected Compositions</a>
-            <span class="project-year">Sound, 2016-2024</span>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="mailto:your@email.com">Email</a> / <a href="#">Instagram</a></p>
+        <span class="section-title">Selected Work</span>
+        
+        <a href="#" class="work-item">A.I. Stars (In Development) <span class="work-year">2025</span></a>
+        <a href="#" class="work-item">TikTok Short Stories <span class="work-year">2024</span></a>
+        <a href="#" class="work-item">Compositions 2016-2024 <span class="work-year">2024</span></a>
     </section>
 
 </body>
